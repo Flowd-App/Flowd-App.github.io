@@ -280,97 +280,35 @@ code {
   margin-top: 90px;
 }
 
-.flow-graph {
-  position: relative;
-  margin-top: 36px;
-  min-height: 420px;
-  border-radius: 24px;
-  background: linear-gradient(135deg, rgba(9, 15, 30, 0.9), rgba(8, 14, 28, 0.6));
+.flow-steps {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.flow-step {
+  background: linear-gradient(150deg, rgba(10, 18, 34, 0.85), rgba(9, 15, 30, 0.55));
   border: 1px solid rgba(92, 200, 255, 0.2);
-  box-shadow: 0 24px 60px rgba(6, 10, 22, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 18px 40px rgba(6, 10, 22, 0.55);
 }
 
-.flow-node {
-  position: absolute;
-  width: min(280px, 36vw);
-  padding: 18px;
-  border-radius: 18px;
-  background: rgba(12, 20, 36, 0.9);
-  border: 1px solid rgba(92, 200, 255, 0.25);
-  box-shadow: 0 18px 40px rgba(6, 10, 22, 0.6);
-}
-
-.flow-node h3 {
-  margin: 8px 0 6px;
+.flow-step h3 {
+  margin: 10px 0 8px;
   font-size: 18px;
 }
 
-.flow-node p {
+.flow-step p {
   margin: 0;
   color: var(--slate);
-  font-size: 14px;
 }
 
-.flow-tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: rgba(92, 200, 255, 0.16);
+.step-index {
+  font-family: "Fraunces", serif;
   color: var(--accent);
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 1.2px;
-}
-
-.flow-node.entry.left {
-  top: 16%;
-  left: 8%;
-}
-
-.flow-node.entry.right {
-  top: 16%;
-  right: 8%;
-}
-
-.flow-node.center {
-  top: 44%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.flow-node.exit {
-  bottom: 12%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.flow-line {
-  position: absolute;
-  height: 2px;
-  background: linear-gradient(90deg, rgba(92, 200, 255, 0.7), transparent);
-}
-
-.line-left {
-  width: 120px;
-  top: 30%;
-  left: 38%;
-}
-
-.line-right {
-  width: 120px;
-  top: 30%;
-  right: 38%;
-  transform: rotate(180deg);
-}
-
-.line-down {
-  width: 2px;
-  height: 120px;
-  left: 50%;
-  top: 58%;
-  background: linear-gradient(180deg, rgba(92, 200, 255, 0.7), transparent);
+  font-size: 22px;
 }
 
 .cta {
@@ -423,20 +361,7 @@ code {
     grid-column: span 1;
   }
 
-  .flow-graph {
-    min-height: auto;
-    padding: 24px;
-    display: grid;
-    gap: 14px;
-  }
-
-  .flow-node {
-    position: static;
-    width: 100%;
-    transform: none;
-  }
-
-  .flow-line {
-    display: none;
+  .flow-steps {
+    grid-template-columns: 1fr;
   }
 }
