@@ -64,26 +64,21 @@
             </div>
           </div>
         </div>
-        <div class="hero-graph" aria-hidden="true">
-          <div class="graph-core">
-            <p class="core-title">Flowd Tree</p>
-            <p class="core-meta">Structure-driven building</p>
+        <div class="hero-grid" aria-hidden="true">
+          <div class="signal-card">
+            <p class="signal-title">Create New</p>
+            <p class="signal-value">Describe → Tree</p>
+            <p class="signal-meta">Generate a structure from your project description.</p>
           </div>
-          <div class="graph-node node-a">
-            <p class="node-title">Create New</p>
-            <p class="node-meta">Describe → Tree</p>
+          <div class="signal-card">
+            <p class="signal-title">Import Existing</p>
+            <p class="signal-value">Files → Tree</p>
+            <p class="signal-meta">Let AI read your repo and map its structure.</p>
           </div>
-          <div class="graph-node node-b">
-            <p class="node-title">Import Existing</p>
-            <p class="node-meta">Files → Tree</p>
-          </div>
-          <div class="graph-node node-c">
-            <p class="node-title">Generate</p>
-            <p class="node-meta">Nodes → Project</p>
-          </div>
-          <div class="graph-node node-d">
-            <p class="node-title">Edit & Debug</p>
-            <p class="node-meta">Editor + Chatbot + Terminal</p>
+          <div class="signal-card wide">
+            <p class="signal-title">Iterate Anytime</p>
+            <p class="signal-value">Edit → Debug → Run</p>
+            <p class="signal-meta">Use the built-in editor, chatbot, and terminal.</p>
           </div>
         </div>
       </section>
@@ -118,27 +113,30 @@
           <p class="eyebrow">HOW IT WORKS</p>
           <h2>Two paths, one workflow.</h2>
         </div>
-        <div class="flow-steps">
-          <article class="flow-step">
-            <span class="step-index">01</span>
+        <div class="flow-graph" aria-hidden="true">
+          <div class="flow-node entry left">
+            <span class="flow-tag">Path A</span>
             <h3>Create New Project</h3>
             <p>Describe what you want, then review and refine the generated tree.</p>
-          </article>
-          <article class="flow-step">
-            <span class="step-index">02</span>
-            <h3>Generate From Nodes</h3>
-            <p>Hit generate and each node is used as a prompt to create the project.</p>
-          </article>
-          <article class="flow-step">
-            <span class="step-index">OR</span>
+          </div>
+          <div class="flow-node entry right">
+            <span class="flow-tag">Path B</span>
             <h3>Import Existing Project</h3>
             <p>Flowd reads your files and builds a tree from your current codebase.</p>
-          </article>
-          <article class="flow-step">
-            <span class="step-index">03</span>
-            <h3>Edit, Debug, Run</h3>
-            <p>Use the built-in editor, AI chatbot, and terminal, and edit the tree anytime.</p>
-          </article>
+          </div>
+          <div class="flow-node center">
+            <span class="flow-tag">Core</span>
+            <h3>Tree Structure</h3>
+            <p>Both paths converge into a tree you can revise at any time.</p>
+          </div>
+          <div class="flow-node exit">
+            <span class="flow-tag">Next</span>
+            <h3>Generate and Iterate</h3>
+            <p>Each node becomes a prompt to generate code, then edit, debug, and run.</p>
+          </div>
+          <div class="flow-line line-left"></div>
+          <div class="flow-line line-right"></div>
+          <div class="flow-line line-down"></div>
         </div>
       </section>
 
