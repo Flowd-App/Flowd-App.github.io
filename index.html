@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flowd — Map, Understand, and Modify Large Codebases</title>
+    <meta
+      name="description"
+      content="Flowd extracts large projects into a tree-like software structure for visualization and node-by-node modification."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg">
+      <div class="orb orb-a"></div>
+      <div class="orb orb-b"></div>
+      <div class="grid"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="logo">Flowd</div>
+      <nav class="nav">
+        <a href="#why">Why</a>
+        <a href="#how">How</a>
+        <a href="#use">Use Cases</a>
+        <a href="#cta">Get Started</a>
+      </nav>
+      <a class="btn ghost" href="https://github.com/AllenMuenLee/Flowd">GitHub</a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">AI-ASSISTED CODE INTELLIGENCE</p>
+          <h1>Turn huge codebases into a navigable, editable tree.</h1>
+          <p class="lead">
+            Flowd turns your project idea or existing codebase into a tree-like structure you can
+            revise, generate, and iterate on. Each node becomes a prompt for AI-driven code
+            creation and focused edits.
+          </p>
+          <p class="meta-note">Built using Amazon Nova.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#cta">Build With Flowd</a>
+            <a class="btn ghost" href="https://github.com/AllenMuenLee/Flowd">View on GitHub</a>
+          </div>
+          <div class="mini-stats">
+            <div>
+              <span class="stat-num">Tree-first</span>
+              <span class="stat-label">Structure from descriptions</span>
+            </div>
+            <div>
+              <span class="stat-num">Node-level</span>
+              <span class="stat-label">Prompted code generation</span>
+            </div>
+            <div>
+              <span class="stat-num">Built-in</span>
+              <span class="stat-label">Editor, chatbot, terminal</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-grid" aria-hidden="true">
+          <div class="signal-card">
+            <p class="signal-title">Create New</p>
+            <p class="signal-value">Describe → Tree</p>
+            <p class="signal-meta">Generate a structure from your project description.</p>
+          </div>
+          <div class="signal-card">
+            <p class="signal-title">Import Existing</p>
+            <p class="signal-value">Files → Tree</p>
+            <p class="signal-meta">Let AI read your repo and map its structure.</p>
+          </div>
+          <div class="signal-card wide">
+            <p class="signal-title">Iterate Anytime</p>
+            <p class="signal-value">Edit → Debug → Run</p>
+            <p class="signal-meta">Use the built-in editor, chatbot, and terminal.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section">
+        <div class="section-head">
+          <p class="eyebrow">WHY FLOWD</p>
+          <h2>Flowd turns structure into an interface for building.</h2>
+          <p class="lead">
+            Whether you start from a description or an existing repo, Flowd builds a tree structure
+            you can revise and use to generate or modify code node by node.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <h3>Structure From Descriptions</h3>
+            <p>Input your idea and Flowd generates a tree you can revise before creation.</p>
+          </article>
+          <article class="card">
+            <h3>Import Existing Projects</h3>
+            <p>Flowd reads your files and builds a tree so you can explore and edit.</p>
+          </article>
+          <article class="card">
+            <h3>Node Prompts</h3>
+            <p>Each node description becomes a prompt to generate or improve code.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="how" class="section flow">
+        <div class="section-head">
+          <p class="eyebrow">HOW IT WORKS</p>
+          <h2>Two paths, one workflow.</h2>
+        </div>
+        <div class="flow-steps">
+          <article class="flow-step">
+            <span class="step-index">01</span>
+            <h3>Create New Project</h3>
+            <p>Describe what you want, then review and refine the generated tree.</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">02</span>
+            <h3>Generate From Nodes</h3>
+            <p>Hit generate and each node is used as a prompt to create the project.</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">03</span>
+            <h3>Import Existing Project</h3>
+            <p>Flowd reads your files and builds a tree from your current codebase.</p>
+          </article>
+          <article class="flow-step">
+            <span class="step-index">04</span>
+            <h3>Edit, Debug, Run</h3>
+            <p>Use the built-in editor, AI chatbot, and terminal, and edit the tree anytime.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="use" class="section">
+        <div class="section-head">
+          <p class="eyebrow">USE CASES</p>
+          <h2>Built for making and improving real projects.</h2>
+        </div>
+        <div class="use-grid">
+          <div class="use-card">
+            <h3>Greenfield Builds</h3>
+            <p>Start from a description and generate a structured project you can refine.</p>
+          </div>
+          <div class="use-card">
+            <h3>Existing Codebases</h3>
+            <p>Import a repo, understand it as a tree, and update it with precision.</p>
+          </div>
+          <div class="use-card">
+            <h3>Iterative Improvements</h3>
+            <p>Modify the tree at any time to improve or change parts of the project.</p>
+          </div>
+          <div class="use-card">
+            <h3>Faster Debugging</h3>
+            <p>Use the built-in AI chatbot and terminal to debug and run your code.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="cta" class="section cta">
+        <div>
+          <h2>Build with Flowd.</h2>
+          <p>
+            Create from scratch or import an existing project, then generate and iterate using the
+            tree.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn" href="https://github.com/AllenMuenLee/Flowd">Open GitHub</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Flowd — Tree-first AI project builder</span>
+      <span>Built using Amazon Nova.</span>
+    </footer>
+  </body>
+</html>
