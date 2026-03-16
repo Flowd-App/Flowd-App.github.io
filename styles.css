@@ -200,6 +200,41 @@ main {
   align-items: stretch;
 }
 
+.hero-visual {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.hero-logo-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-logo {
+  width: min(320px, 80%);
+  filter: drop-shadow(0 18px 28px rgba(6, 10, 22, 0.55));
+  animation: drift 4.5s ease-in-out infinite;
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(-10px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-logo {
+    animation: none;
+  }
+}
+
 .signal-card {
   background: linear-gradient(160deg, rgba(12, 22, 40, 0.92), rgba(10, 18, 34, 0.7));
   border: 1px solid rgba(92, 200, 255, 0.25);
